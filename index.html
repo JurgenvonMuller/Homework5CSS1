@@ -5,6 +5,9 @@
   <meta name="Yuriy Melnykov" content="CSS selectors">
   <link rel="stylesheet" type="text/css" href="styles.css">
   <link rel="shortcut icon" href="/images/CSS.jpg" type="image CSS">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Josefin+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,300;0,400;0,900;1,300;1,400;1,700&display=swap');
+  </style>
   <title>CSS selectors, rules CSS, samples CSS</title>
 </head>
 <body>
@@ -15,17 +18,15 @@
     <h2 style=" color:green; text-align: center;font-size: 32px; text-shadow: 2px 2px 2px green;
   ; ">ОСНОВНЫЕ ВИДЫ СЕЛЕКТОРОВ CSS</h2>
     <h3>1. ТИПЫ СЕЛЕКТОРОВ</h3>
-    <p><span class="nameselector">Селекторы типа</span> выбирают <b>элементы HTML-документа по их тегу</b>. <br> Например, селектор <b class="big">p</b>  выберет все теги <span class="big"><p&GT</span> на странице.</p>                               
-  
-    <p>Пример селектора <b>типа</b> для тега <p&GT:</p>
-    <!--<div class="code">-->
+    <p><span class="nameselector">Селекторы типа</span> выбирают <b>элементы HTML-документа по их тегу</b>. <br> Например, селектор <b class="big">.p</b>  выберет все теги <span class="big">&lt;p&GT</span> на странице.</p>                               
+    <p>Пример селектора <b>типа</b> для тега <span class="big">&lt;p&GT</span>:</p>
       <pre class="code">
         p {
           font-size: 16px;
         }
       </pre>
     <p><span class="nameselector"> Селектор класса</span> определяют стиль элементов с<b>определённым классом.</b> </p>                                
-    <p>Пример селектора класса для класса <code>class=highlight</code> :</p>
+    <p>Пример селектора класса для класса <span class="big">class="highlight"</span> :</p>
     <pre class="code">
         .highlight {
           background-color: yellow;
@@ -59,7 +60,7 @@
     <p> <span class="nameselector">Универсальный селектор</span> позволяет прописать стили для всех элементов HTML без исключения. 
       Он указывается в виде звёздочки *. В примере ниже мы используем универсальный селектор с псевдоэлементами,
       чтобы изменить расчёт общего размера элемента.</p>
-    <p>Пример селектора универсального</p>
+    <p>Пример селектора универсального:</p>
       <pre class="code">
         *,
         *::before,
@@ -148,14 +149,19 @@
   </div>
 
 <!-- ДОМАШНЕЕ ЗАДАНИЕ _ НАЧАЛО )))) -->
-<div class="homweork5"><p>6. Съешь ещё этих мягких французских булок, да выпей же чаю</p>
-  <p>7. Съешь ещё этих мягких французских булок, да выпей же чаю</p>
+
+
+
+<div class="homweork5">
+  
+  <p>1. Съешь ещё этих мягких французских булок, да выпей же чаю</p>
+  <p>2. Съешь ещё этих мягких французских булок, да выпей же чаю</p>
 <!-- BLOCK 1 -->
 <p class="1">1. Съешь ещё этих мягких французских булок, да выпей же чаю</p>
 
 <!-- BLOCK 2 -->
 
-<p class="2">2. Съешь ещё этих мягких французских булок, да выпей же чаю2</p>
+<p class="2">2. Съешь ещё этих мягких французских булок, да выпей же чаю</p>
 <p>3. Съешь ещё этих мягких французских булок, да выпей же чаю</p>
 
 <!-- BLOCK 3 -->
