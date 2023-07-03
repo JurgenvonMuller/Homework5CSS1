@@ -33,15 +33,17 @@ color: darkblue;
 text-indent: 42px;
 }
 pre {
+display:block;
 white-space: pre-wrap;
 margin: 30px 80px;
 color: red;
 font-size: 26px;
 background-color: white;
 width: 70%;
+border-radius: 10px;
 }
 .sign {
-  display: bkock;
+  display: block;
   width: 600px;
   height: 400px;
   background-color: pink;
@@ -50,6 +52,7 @@ width: 70%;
   border: 4px solid black; 
   margin-left: auto; 
   margin-right: auto;
+  border-radius: 20px;
 }
 span {
   font-weight: bold;
@@ -76,6 +79,7 @@ font: Arial, 400, 20px,
 /* Упражнение 2 Непосредственное указание аутентичного id к которому должен быть применен стиль.    */
 #example2 {
   color:red;
+  background-color: blueviolet;
 }
 #example22 {
   color: green;
@@ -102,17 +106,23 @@ ul > li[class="lineg"] {
   color: brown;
   font-size: 22px;
 }
-/*Упражнение 8 выборка стиля по классу который входит в указанные классы */
+/*Упражнение 8 выборка стиля по классу который входит в указанные символы */
 .list8>li[class~="a"] {
   color: greenyellow;
   font-size: 22px;
 }
-/*Упражнение 9 выборка стиля по классу который входит в указанные классы */
+/*Упражнение 9 выборка стиля по классу в который входят указанные символы */
 .list9>li[class^="a"] {
   color: rgb(28, 228, 71);
   font-size: 22px;
 }
+/*Упражнение 10 выборка стиля по классу который входит в указанные символы*/
 .list10>li[class$="a"] {
   color:chartreuse;
   font-size: 20px;
+}
+/*Обязательное задание назначение 
+цвета по нескольким классам. Выполнение синим цветом в упражнениях 8,9,10*/
+.b, .bca {
+  color: blue;
 }
